@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Add these permissions if not present -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <!-- Ensure that your service is registered in the manifest -->
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodDeliverForTrain"
+        tools:targetApi="31">
+        <service
+            android:name=".MealNotificationService"
+            android:exported="false"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Login"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.final_proj.LOGIN_SUCCESSFUL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Register"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.final_proj.REGISTRATION_SUCCESSFUL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".User"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Admin"
+            android:exported="true" />
+
+        <activity
+            android:name=".Add"
+            android:exported="false" />
+
+        <activity
+            android:name=".Edit"
+            android:exported="false" />
+
+        <activity
+            android:name=".Delete"
+            android:exported="false" />
+
+
+        <service
+            android:name=".MealNotificationService"
+            android:exported="false"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <include layout="@layout/button_bar_layout"
+        android:id="@+id/buttonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/editTextItemId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edited Item ID"
+        android:layout_below="@id/buttonBar"
+        android:layout_marginBottom="8dp"/>
+    <EditText
+        android:id="@+id/editTextNewItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextItemId"
+        android:hint="New Item Name"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextNewItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Item Price"
+        android:layout_below="@id/editTextNewItemName"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnEditItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Item"
+        android:layout_below="@id/editTextNewItemPrice"
+        android:layout_marginTop="16dp"/>
+
+    <ListView
+        android:id="@+id/menuListViewEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEditItem"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
