@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Menu</string>
+    <string name="welcome">Welcome to our app Eng.Sara</string>
+    <string name="prov">Provide your Email and Password to Login</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="regsiter">Register</string>
+    <string name="regtext">"Don't have an Account?"</string>
+    <!-- Add other English strings here -->
+</resources>

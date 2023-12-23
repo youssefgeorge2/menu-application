@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">المنيو</string>
+    <string name="welcome">"مرحبا بك في تطبيقنا م.سارة"</string>
+    <string name="prov">من فضلك ادخل أسم المستخدم وكلمة السر</string>
+    <string name="username">"أسم المستخدم"</string>
+    <string name="password">كلمة السر</string>
+    <string name="login">"تسجيل الدخول"</string>
+    <string name="regsiter">"التسجيل"</string>
+    <string name="regtext">"لا تمتلك حساب بعد؟"</string>
+</resources>
